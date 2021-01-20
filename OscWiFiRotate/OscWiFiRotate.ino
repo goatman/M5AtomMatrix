@@ -3,8 +3,7 @@
 
 // WiFi stuff
 const char* ssid = "AirStation";
-const char* pwd = "96542091";
-//const IPAddress ip(192, 168, 0, 106);
+const char* pwd = "";
 const IPAddress ip(0, 0, 0, 0);
 const IPAddress gateway(192, 168, 0, 1);
 const IPAddress subnet(255, 255, 255, 0);

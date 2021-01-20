@@ -3,7 +3,7 @@
 
 
 const char* ssid = "AirStation";
-const char* password =  "96542091";
+const char* password =  "";
 
 extern const unsigned char AtomImageData[375 + 2];
 
