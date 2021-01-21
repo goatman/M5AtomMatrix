@@ -2,15 +2,15 @@
 #include "M5Atom.h"
 
 // WiFi stuff
-const char* ssid = "AirStation";
-const char* pwd = "";
+const char* ssid = "NETGEAR04";
+const char* pwd = "shinyriver296";
 
 const IPAddress ip(0, 0, 0, 0);
 const IPAddress gateway(192, 168, 0, 1);
 const IPAddress subnet(255, 255, 255, 0);
 
 // for ArduinoOSC
-const char* host = "192.168.0.103";
+const char* host = "192.168.0.2";
 const int recv_port = 54321;
 const int bind_port = 54345;
 const int send_port = 54320;

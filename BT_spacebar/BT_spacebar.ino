@@ -80,7 +80,7 @@ class MySecurity : public BLESecurityCallbacks {
 
 // BLEデバイスの起動
 void taskServer(void*){
-  BLEDevice::init("ATOM_F4");
+  BLEDevice::init("ATOM_ADRIAN");
 
   BLEDevice::setEncryptionLevel(ESP_BLE_SEC_ENCRYPT_MITM);
   BLEDevice::setSecurityCallbacks(new MySecurity());  
@@ -189,7 +189,8 @@ void loop() {
 
       uint8_t msg[] = {0x00, 0x00, 0x00, 0x0,0x0,0x0,0x0,0x0};
       //msg[2] = 0x3d; // F4
-      msg[2] = 0x20; // spacebar
+//      msg[2] = 0x20; // spacebar
+      msg[2] = 0x1e; // num 1
       input->setValue(msg, sizeof(msg));
       input->notify();
       msg[2] = 0; input->setValue(msg, sizeof(msg)); input->notify();
